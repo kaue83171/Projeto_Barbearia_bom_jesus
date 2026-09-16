@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barbearia Bom Jesus — Agendamento de Cortes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/logo-barbearia.png" type="image/png" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="img/logo-barbearia.png" alt="Logo Barbearia Bom Jesus" class="brand-logo"
+          onerror="this.style.display='none'">
+        <div class="brand-text">
+          <strong>Barbearia Bom Jesus</strong>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a class="nav-link" href="#precos">Preços</a>
+        <a class="nav-link" href="#cortes">Cortes</a>
+        <a class="nav-link" href="#barbeiros">Barbeiros</a>
+        <a class="nav-link" target="_blank" rel="noopener"
+          href="https://web.whatsapp.com/send?phone=55999939207">WhatsApp</a>
+        <a class="nav-link" target="_blank" rel="noopener"
+          href="https://www.instagram.com/kauers._/">Instagram</a>
+        <span id="nav-conta"></span>
+        <button class="btn btn-primary" data-open="agenda">Agendar</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">Fila zero, corte na régua</span>
+      <h1>Marque seu horário sem sair de casa</h1>
+      <p>Escolha o serviço, o barbeiro e o melhor horário num calendário que mostra na hora o que está livre. Sem
+        ligação, sem espera.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" data-open="agenda">Agendar agora</button>
+        <a class="btn btn-ghost" href="#precos">Ver preços</a>
+      </div>
+    </div>
+    <div class="hero-frame">
+      <div class="ph" data-ph="BBJ">
+        <img src="img/ambiente-barbearia.png" alt="Ambiente da barbearia" onerror="this.remove()">
+      </div>
+    </div>
+  </section>
+
+  <section id="precos" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2 class="section-title">Preços</h2>
+          <p class="section-sub">Valores fechados, sem surpresa na hora de pagar.</p>
+        </div>
+      </div>
+      <div class="menu-board reveal">
+        <div class="menu-row">
+          <div class="menu-row-text"><h3>Corte Clássico</h3></div>
+          <div class="leader"></div>
+          <span class="price">R$ 35</span>
+        </div>
+        <div class="menu-row">
+          <div class="menu-row-text"><h3>Degradê / Fade</h3><span class="note">Acabamento preciso</span></div>
+          <div class="leader"></div>
+          <span class="price">R$ 35</span>
+        </div>
+        <div class="menu-row">
+          <div class="menu-row-text"><h3>Navalhado</h3><span class="note">Lâmina e finalização</span></div>
+          <div class="leader"></div>
+          <span class="price">R$ 40</span>
+        </div>
+        <div class="menu-row">
+          <div class="menu-row-text"><h3>Barba</h3><span class="note">Hidratação + toalha quente</span></div>
+          <div class="leader"></div>
+          <span class="price">R$ 15</span>
+        </div>
+        <div class="menu-row">
+          <div class="menu-row-text"><h3>Combo Corte + Barba</h3><span class="note">Melhor custo-benefício</span></div>
+          <div class="leader"></div>
+          <span class="price">R$ 50</span>
+        </div>
+        <div class="menu-row">
+          <div class="menu-row-text"><h3>Combo Navalhado + Barba</h3><span class="note">Acabamento perfeito</span></div>
+          <div class="leader"></div>
+          <span class="price">R$ 50</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cortes" class="section alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2 class="section-title">Galeria de cortes</h2>
+          <p class="section-sub">Alguns dos estilos que mais saem da cadeira.</p>
+        </div>
+      </div>
+      <div class="gallery">
+        <figure class="shot">
+          <div class="ph" data-ph="V"><img src="cortes/degrade-v.jpg" alt="Degradê em V" onerror="this.remove()"></div>
+          <figcaption>Degradê em V</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph" data-ph="MF"><img src="cortes/mid-fade.jpg" alt="Mid Fade" onerror="this.remove()"></div>
+          <figcaption>Mid Fade</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph" data-ph="LF"><img src="cortes/low-fade.jpg" alt="Low Fade" onerror="this.remove()"></div>
+          <figcaption>Low Fade</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph" data-ph="AM"><img src="cortes/americano.jpg" alt="Americano" onerror="this.remove()"></div>
+          <figcaption>Americano</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph" data-ph="MI"><img src="cortes/militar.jpg" alt="Militar" onerror="this.remove()"></div>
+          <figcaption>Militar</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="ph" data-ph="MO"><img src="cortes/moderno.jpg" alt="Moderno" onerror="this.remove()"></div>
+          <figcaption>Moderno</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="barbeiros" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2 class="section-title">Nosso time</h2>
+          <p class="section-sub">Três estilos, um mesmo capricho.</p>
+        </div>
+      </div>
+      <div class="team">
+        <article class="pro">
+          <a href="https://web.whatsapp.com/send?phone=55999939207">
+            <div class="ph" data-ph="JS"><img src="img/barbeiros/joao.jpg" alt="Barbeiro João" onerror="this.remove()"></div>
+          </a>
+          <div>
+            <h3>João Santos</h3>
+            <a class="bar-inta' href="https://www.instagram.com/kauers._/"> Instagram </a>
+          </div>
+        </article>
+
+        <article class="pro">
+          <a href="https://web.whatsapp.com/send?phone=55999939207">
+            <div class="ph" data-ph="ML"><img src="img/barbeiros/marcos.jpg" alt="Barbeiro Marcos" onerror="this.remove()"></div>
+          </a>
+          <div>
+            <h3>Marcos Lima</h3>
+            <p class="muted">Clássicos e barba premium</p>
+          </div>
+        </article>
+
+        <article class="pro">
+          <a href="https://web.whatsapp.com/send?phone=55999939207">
+            <div class="ph" data-ph="PO"><img src="img/barbeiros/pedro.jpg" alt="Barbeiro Pedro" onerror="this.remove()"></div>
+          </a>
+          <div>
+            <h3>Pedro Oliveira</h3>
+            <p class="muted">Cortes modernos e pigmentação</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Barbearia Bom Jesus — Todos os direitos reservados.</p>
+      <div class="socials">
+        <a aria-label="Instagram" href="https://www.instagram.com/kauers._/" target="_blank" rel="noopener">
+          <img src="img/icons/icon_insta.png" alt="" onerror="this.remove()" />
+        </a>
+        <a aria-label="WhatsApp" href="https://web.whatsapp.com/send?phone=55999939207" target="_blank" rel="noopener">
+          <img src="img/icons/icon_whts.png" alt="" onerror="this.remove()" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Entrar / Criar conta -->
+  <dialog id="modal-conta" class="modal">
+    <div class="modal-box">
+      <header class="modal-header">
+        <h3>Sua conta</h3>
+        <button type="button" class="icon-btn" data-close>✕</button>
+      </header>
+
+      <div class="tabs">
+        <button type="button" class="tab-btn active" data-tab="entrar">Entrar</button>
+        <button type="button" class="tab-btn" data-tab="criar">Criar conta</button>
+      </div>
+
+      <form id="form-entrar" class="tab-panel" data-panel="entrar">
+        <div class="grid">
+          <label class="field field-full">
+            <span>Telefone</span>
+            <input type="tel" name="telefone" placeholder="(55) 90000-0000" required />
+          </label>
+          <label class="field field-full">
+            <span>Senha</span>
+            <input type="password" name="senha" required />
+          </label>
+        </div>
+        <p class="error-text" data-error="entrar"></p>
+        <footer class="modal-actions">
+          <button type="button" class="btn btn-ghost" data-close>Cancelar</button>
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </footer>
+      </form>
+
+      <form id="form-criar" class="tab-panel" data-panel="criar" hidden>
+        <div class="grid">
+          <label class="field field-full">
+            <span>Nome completo</span>
+            <input type="text" name="nome" placeholder="Seu nome" required />
+          </label>
+          <label class="field field-full">
+            <span>Telefone (WhatsApp)</span>
+            <input type="tel" class="tel-mask" name="telefone" placeholder="(55) 90000-0000" required />
+          </label>
+          <label class="field field-full">
+            <span>Senha</span>
+            <input type="password" name="senha" minlength="4" required />
+          </label>
+        </div>
+        <p class="hint">Guardado só neste navegador — é uma demonstração, não use uma senha que você usa em outro
+          lugar.</p>
+        <p class="error-text" data-error="criar"></p>
+        <footer class="modal-actions">
+          <button type="button" class="btn btn-ghost" data-close>Cancelar</button>
+          <button type="submit" class="btn btn-primary">Criar conta</button>
+        </footer>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Modal de Agendamento -->
+  <dialog id="modal-agenda" class="modal">
+    <div class="modal-box">
+      <header class="modal-header">
+        <h3>Agendar corte</h3>
+        <button type="button" class="icon-btn" data-close>✕</button>
+      </header>
+
+      <div id="agenda-gate" class="gate" hidden>
+        <p>Entre ou crie uma conta para ver os horários livres e agendar.</p>
+        <div class="gate-actions">
+          <button type="button" class="btn btn-ghost" data-gate="entrar">Entrar</button>
+          <button type="button" class="btn btn-primary" data-gate="criar">Criar conta</button>
+        </div>
+      </div>
+
+      <form id="form-agenda" hidden>
+        <div class="account-line">
+          <span>Agendando como <strong id="agenda-usuario-nome"></strong></span>
+          <button type="button" class="btn btn-text" id="agenda-sair">Sair</button>
+        </div>
+
+        <div class="grid">
+          <label class="field">
+            <span>Serviço</span>
+            <select name="servico" id="sel-servico" required>
+              <option value="">Selecione</option>
+              <option>Corte Clássico</option>
+              <option>Degradê / Fade</option>
+              <option>Navalhado</option>
+              <option>Barba</option>
+              <option>Combo Corte + Barba</option>
+              <option>Combo Navalhado + Barba</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Barbeiro</span>
+            <select name="barbeiro" id="sel-barbeiro" required>
+              <option value="">Selecione</option>
+              <option>João</option>
+              <option>Marcos</option>
+              <option>Pedro</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="step" id="step-calendario">
+          <p class="step-title">Escolha o dia</p>
+          <div class="calendar">
+            <div class="cal-head">
+              <div class="cal-nav">
+                <button type="button" id="cal-prev" aria-label="Mês anterior">‹</button>
+                <button type="button" id="cal-next" aria-label="Próximo mês">›</button>
+              </div>
+              <h4 id="cal-titulo"></h4>
+              <span></span>
+            </div>
+            <div class="cal-grid" id="cal-dow"></div>
+            <div class="cal-grid" id="cal-dias"></div>
+            <div class="cal-legend">
+              <span><i class="dot legend-free"></i> livre</span>
+              <span><i class="dot legend-partial"></i> alguns horários</span>
+              <span><i class="dot legend-full"></i> lotado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" id="step-horarios">
+          <p class="step-title">Escolha o horário — <span id="horarios-data-legivel"></span></p>
+          <div id="horarios-disponiveis" class="horarios-grid"></div>
+          <input type="hidden" name="hora" id="hora" />
+        </div>
+
+        <footer class="modal-actions">
+          <button type="button" class="btn btn-ghost" data-close>Cancelar</button>
+          <button type="submit" class="btn btn-primary" id="btn-confirmar" disabled>Confirmar</button>
+        </footer>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Modal: Agendamentos salvos -->
+  <dialog id="modal-lista" class="modal">
+    <div class="modal-box">
+      <header class="modal-header">
+        <h3>Meus agendamentos</h3>
+        <button type="button" class="icon-btn" data-close>✕</button>
+      </header>
+      <div id="lista-agendamentos" class="appointments"></div>
+      <footer class="modal-actions">
+        <button class="btn btn-ghost" data-close>Fechar</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <button class="floating" title="Ver agendamentos" data-open="lista">🗓️</button>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

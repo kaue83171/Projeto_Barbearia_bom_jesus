@@ -1,0 +1,7 @@
+/* css/style.css - arquivo agregador. Os estilos ficam separados por responsabilidade. */
+@import url("./base.css");
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./sections.css");
+@import url("./modal.css");
+@import url("./responsive.css");

@@ -1,0 +1,45 @@
+/* css/sections.css */
+/* PREÇOS, GALERIA, BARBEIROS, RODAPÉ */
+
+
+
+
+.ph{position:relative;background:linear-gradient(135deg,var(--brass) 0%,var(--oxblood) 100%);display:flex;align-items:center;justify-content:center}
+.ph::after{content:attr(data-ph);font-family:'Fraunces',serif;font-size:2rem;color:rgba(28,23,18,.55)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Preços */
+.menu-board{max-width:760px;margin:0 auto;border:1px solid rgba(192,138,62,.3);border-radius:var(--radius);padding:8px;background:rgba(244,236,221,.02)}
+.menu-row{display:flex;align-items:baseline;gap:10px;padding:16px 18px;border-bottom:1px dashed rgba(183,168,141,.28)}
+.menu-row:last-child{border-bottom:none}
+.menu-row h3{font-size:1.05rem;white-space:nowrap}
+.menu-row .leader{flex:1;border-bottom:2px dotted rgba(183,168,141,.4);transform:translateY(-5px)}
+.menu-row .price{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:var(--brass);white-space:nowrap}
+.menu-row .note{display:block;color:var(--muted);font-size:.82rem;margin-top:2px}
+.menu-row-text{display:flex;flex-direction:column}
+
+/* Galeria */
+.gallery{column-count:3;column-gap:14px}
+.shot{break-inside:avoid;margin-bottom:14px;border-radius:var(--radius);overflow:hidden;position:relative;box-shadow:var(--shadow)}
+.shot .ph{width:100%;aspect-ratio:4/5}
+.shot:nth-child(3n+1) .ph{aspect-ratio:3/4}
+.shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);font-weight:600;transform:translateY(6px);opacity:.85;transition:transform .25s var(--ease),opacity .25s var(--ease)}
+.shot:hover figcaption{transform:translateY(0);opacity:1}
+.shot:hover .ph img{transform:scale(1.04)}
+.shot .ph img{transition:transform .4s var(--ease)}
+
+/* Time */
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.pro{display:flex;gap:14px;align-items:center;padding:14px;border:1px solid rgba(192,138,62,.2);border-radius:var(--radius);background:rgba(244,236,221,.02);transition:border-color .2s ease,transform .2s ease}
+.pro:hover{border-color:rgba(192,138,62,.5);transform:translateY(-2px)}
+.pro .ph{width:68px;height:68px;border-radius:12px;flex:none}
+.pro .ph::after{font-size:1.2rem}
+.pro h3{font-size:1.05rem}
+.bar-inta 
+
+/* Rodapé */
+.site-footer{border-top:1px solid rgba(192,138,62,.2);padding:22px 0;margin-top:24px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.socials{display:flex;gap:14px}
+.socials img{width:22px;height:22px;opacity:.8;transition:opacity .15s ease}
+.socials a:hover img{opacity:1}

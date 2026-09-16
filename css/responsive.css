@@ -1,0 +1,11 @@
+/* css/responsive.css */
+@media (max-width:860px){.gallery{column-count:2}}
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;padding-top:32px}
+  .hero-frame{order:-1;max-width:340px;margin-inline:auto}
+}
+@media (max-width:720px){
+  .grid{grid-template-columns:1fr}
+  .menu-row h3{white-space:normal}
+}
+@media (max-width:520px){.gallery{column-count:1}}

@@ -1,0 +1,43 @@
+/* css/base.css
+   Tokens, reset, tipografia, containers e animações gerais. */
+
+:root{
+  --ink:#1c1712;
+  --ink-soft:#262019;
+  --paper:#f4ecdd;
+  --paper-dim:#e8dcc6;
+  --brass:#c08a3e;
+  --brass-deep:#8f6526;
+  --oxblood:#7c2a24;
+  --pine:#4c7a5c;
+  --muted:#b7a88d;
+  --muted-dark:#6b6153;
+  --radius-sm:8px;
+  --radius:14px;
+  --shadow:0 14px 32px rgba(0,0,0,.4);
+  --ease:cubic-bezier(.22,.9,.32,1);
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;}
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{height:100%}
+body{
+  font-family:'Work Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--ink);color:var(--paper);line-height:1.55;
+}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;letter-spacing:-.01em}
+a{color:inherit}
+img{display:block;max-width:100%}
+button{font-family:inherit}
+.container{width:min(1120px,92%);margin-inline:auto}
+.section{padding:76px 0}
+.section.alt{background:linear-gradient(180deg,transparent,rgba(244,236,221,.03))}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:32px;flex-wrap:wrap}
+.section-title{font-size:clamp(1.6rem,1.4vw + 1.2rem,2.3rem)}
+.section-sub{color:var(--muted);max-width:46ch}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
