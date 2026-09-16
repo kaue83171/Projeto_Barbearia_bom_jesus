@@ -1,6 +1,4 @@
-# Barbearia Bom Jesus — versão modular
-
-A lógica e o visual foram mantidos, mas o código foi dividido por responsabilidade.
+## Localização e para que serve cada arquivo
 
 ## JavaScript
 - `js/main.js`: ponto de entrada e inicialização.
@@ -20,9 +18,3 @@ A lógica e o visual foram mantidos, mas o código foi dividido por responsabili
 - `css/sections.css`: preços, galeria, equipe e rodapé.
 - `css/modal.css`: modais, calendário, horários e toast.
 - `css/responsive.css`: responsividade.
-
-## Importante
-O projeto usa módulos ES (`type="module"`). Para evitar restrições de `file://`, abra o projeto por um servidor local, por exemplo:
-`python -m http.server 8000`
-
-Depois acesse `http://localhost:8000/`.
