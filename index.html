@@ -271,13 +271,20 @@
         </div>
       </div>
 
-      <form id="form-agenda" hidden>
+      <form id="form-agenda">
         <div class="account-line">
-          <span>Agendando como <strong id="agenda-usuario-nome"></strong></span>
-          <button type="button" class="btn btn-text" id="agenda-sair">Sair</button>
+          <span>Preencha seus dados para confirmar o horário.</span>
         </div>
 
         <div class="grid">
+          <label class="field">
+            <span>Seu nome</span>
+            <input type="text" name="clienteNome" id="cliente-nome" required />
+          </label>
+          <label class="field">
+            <span>WhatsApp</span>
+            <input type="tel" name="clienteTelefone" id="cliente-telefone" required />
+          </label>
           <label class="field">
             <span>Serviço</span>
             <select name="servico" id="sel-servico" required>
@@ -295,9 +302,9 @@
             <span>Barbeiro</span>
             <select name="barbeiro" id="sel-barbeiro" required>
               <option value="">Selecione</option>
-              <option>João</option>
-              <option>Marcos</option>
-              <option>Pedro</option>
+              <option value="joao">João Santos</option>
+              <option value="felipe">Felipe Lima</option>
+              <option value="gustavo">Gustavo Oliveira</option>
             </select>
           </label>
         </div>
